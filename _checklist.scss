@@ -1,0 +1,19 @@
+.checklist-container
+{
+    text-align: left;
+
+    li
+    {
+        margin-bottom: .5em;
+
+        &:before
+        {
+            font-family: "gamma-icons";
+            content: "\e911";
+            color: $green-01;
+            font-size: 1.5em;
+            vertical-align: middle;
+            margin-right: .25em;
+        }
+    }
+}

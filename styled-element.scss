@@ -1,0 +1,47 @@
+#styled-element-section{
+    .centered-container{
+        padding: 1em 1em;
+    }
+    ul{
+        text-align: center;
+        li{
+            display:block;
+            margin-right: 0;
+            border-right: none;
+            padding-right: 0;
+            @include breakpoint($mobile-vert)
+            {
+                margin-right: 1em;
+                border-right: 1px solid #e3e6e9;
+                padding-right: 1em;
+                display: inline-block;
+            }
+            .inline-icon-wrapper{
+                i{
+                    padding-right: .5em;
+                    font-size: 2.5em;
+                    font-weight: bold;
+                }
+            }
+            &:last-child{
+                border-right: none;
+                padding-right: 0;
+                margin-right: 0;
+            }
+            .details{
+                >*{
+                    text-align: left;
+                }
+                h4{
+                    margin-bottom:.2em;
+                    font-size: 21px;
+                    font-family: $font-family-sofia-regular;
+                }
+            }
+            .desc{
+                font-size: 12px;
+                color:#7c808b;
+            }
+        }
+    }
+}

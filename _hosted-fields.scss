@@ -1,0 +1,56 @@
+.hosted-field
+{
+    height: 40px;
+    border-bottom: 1px solid #E2E3E5;
+    padding:10px 0 0 10px;
+}
+
+.edit-card-info
+{
+    .hosted-field
+    {
+        background:white;
+    }
+}
+
+#card-image
+{
+    position: absolute;
+    top: 1em;
+    right: 1em;
+    width: 44px;
+    height: 28px;
+    background-image: url("/assets/images/card_sprite.png");
+    background-size: 86px 458px;
+    border-radius: 4px;
+    background-position: -100px 0;
+    background-repeat: no-repeat;
+    &.visa
+    {
+        background-position: 0 -398px;
+    }
+    &.master-card
+    {
+        background-position: 0 -281px;
+    }
+    &.american-express
+    {
+        background-position: 0 -370px;
+    }
+    &.discover
+    {
+        background-position: 0 -163px;
+    }
+    &.maestro
+    {
+        background-position: 0 -251px;
+    }
+    &.jcb
+    {
+        background-position: 0 -221px;
+    }
+    &.diners-club
+    {
+        background-position: 0 -133px;
+    }
+}

@@ -1,0 +1,284 @@
+@import '../../scss/external/breakpoint-sass/stylesheets/_breakpoint';
+$break-small-medium:1360px;
+
+header {
+    width: 100%;
+    height: $navbar-height;
+    display: flex;
+    flex-direction: row;
+
+    @include breakpoint($break-small-medium) {
+        height: 2.5em;
+    }
+
+    .nav-item {
+        border-right: 1px solid;
+        display: flex;
+        align-items: center;
+        height: 100%;
+
+        .icon-link {
+            font-size: $navbar-icon-size;
+            padding: 0 .6em;
+            display: block;
+
+            @include breakpoint($break-small-medium) {
+                font-size: 1.3em;
+            }
+        }
+
+        &:last-child {
+            border: none;
+        }
+    }
+
+    .btn-container {
+        padding: .25em .5em;
+
+        >* {
+            display: inline;
+        }
+
+        .btn {
+            padding: 0.5em 1em;
+
+            .icon-container {
+                padding-top: 3px;
+            }
+        }
+
+        .run_analysis {
+            display: table;
+
+            >* {
+                display: table-cell;
+                vertical-align: middle;
+            }
+
+            .icon-container {
+                padding-right: 5px;
+            }
+
+            @include breakpoint($break-small-medium) {
+                padding: 0.25em 1em;
+
+                .text-container {
+                    line-height: 1.5em;
+
+                    .btn-text {
+                        vertical-align: text-top;
+                    }
+                }
+            }
+        }
+
+        .available_scan_credit {
+            font-size: 0.75em;
+            margin-right: 0.25em;
+            display: none;
+            cursor: pointer;
+            float: left;
+            line-height: 28px;
+
+            .upgrade-plan-details {
+                color: #00c28c;
+                margin: 0 5px;
+            }
+        }
+    }
+}
+
+#breadcrumb-container {
+    flex: 1 0 auto;
+}
+
+#breadcrumb {
+    padding: .25em .5em;
+    width: 100% !important;
+    /* @Vivek: where is the plugin where the width is being written? */
+}
+
+.breadmenu {
+    li {
+        float: left;
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        a {
+            padding: .5em;
+            display: inline-block;
+            vertical-align: top;
+            max-width: 300px;
+
+            >* {
+                display: inline-block;
+                vertical-align: middle;
+            }
+
+            &.BCrootico {
+                width: 30px;
+            }
+        }
+
+        .type_icon {
+            width: 1em;
+            height: 1em;
+            margin-right: .4em;
+            color: #7B7B7B;
+
+            @include breakpoint($break-small-medium) {
+                font-size: 15px;
+            }
+        }
+
+        .header_item {
+            max-width: 200px;
+            font-size: .75em;
+            line-height: 2em;
+
+            @include breakpoint($break-small-medium) {
+                font-size: .7em;
+            }
+        }
+
+        .BCarrowico {
+            cursor: pointer;
+        }
+
+        .subnav {
+            z-index: 1002;
+            width: 250px;
+            top: 2em;
+            margin-left: 0px;
+            display: none;
+            position: fixed;
+            white-space: nowrap;
+            background-color: #FFFFFF;
+            border: 1px solid #e2e4e8;
+            border-top: 0px;
+            overflow-x: hidden;
+            overflow-y: auto;
+            border-radius: 0px 0px 4px 4px;
+            -moz-border-radius: 0px 0px 4px 4px;
+            -webkit-border-radius: 0px 0px 4px 4px;
+            -webkit-box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.05);
+            -moz-box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.05);
+            box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.05);
+        }
+    }
+}
+
+ul.breadmenu li span.BCarrowico svg polygon {
+    fill: #afb2bd;
+}
+
+.breadmenu li>ul>li {
+    border-right: medium none;
+    display: block;
+    width: 100%;
+}
+
+.breadmenu li>ul>li a {
+    width: 100%;
+    display: block;
+    overflow: hidden;
+}
+
+.breadcrumb_icon {
+    height: 18px;
+    margin-top: 2px;
+    width: 18px;
+}
+
+.breadcrumb_icon.ic-projects {
+    font-size: 1.8em;
+    color: #7B7B7B;
+}
+
+.breadcrumb_text {
+    width: 75%;
+    line-height: 1.8;
+    font-size: 11px;
+}
+
+ul.subnav>li>span {
+    display: none;
+}
+
+.droplist {
+    width: 100%;
+    margin: 1px;
+    color: #7B7B7B;
+    padding: 4px 8px;
+    font-size: 11px;
+}
+
+.breadmenu #subsystem {
+    max-width: 18px;
+}
+
+.breadmenu #triangle {
+    max-width: .8em;
+}
+
+.search_wrapper {
+    width: 0;
+    position: relative;
+
+    .search_inner_wrapper {
+        padding: 0 .5em;
+
+        .close_icon {
+            right: 1em;
+            top: 0;
+            position: absolute;
+            display: flex;
+            align-items: center;
+            height: 100%;
+            margin: 0;
+            width: 1em;
+            cursor: pointer;
+
+            .input_clear_icon {
+                border-radius: 50%;
+            }
+
+            &:hover {
+                .input_clear_icon {
+                    background-color: #ccc;
+                    color: white;
+                }
+            }
+        }
+    }
+
+    input {
+        width: 100%;
+        font-size: .8em;
+        border-radius: 25px;
+        outline: none;
+        box-shadow: none;
+        padding: .6em 2em .6em 1em;
+        border: 1px solid #ededed;
+        -webkit-appearance: none;
+
+        @include breakpoint($break-small-medium) {
+            font-size: 0.7em;
+        }
+    }
+
+    .search_loading {
+        position: absolute;
+        right: 1em;
+        top: 0;
+        height: 100%;
+        align-items: center;
+
+        .text {
+            font-size: .65em;
+            background-color: #fff;
+        }
+    }
+}

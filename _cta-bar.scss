@@ -1,0 +1,138 @@
+.cta-bar
+{
+    // display: flex;
+    @include colorArray;
+    padding: 1em;
+    color: white;
+
+    &.fluid
+    {
+        .content-container
+        {
+            max-width: none;
+        }
+    }
+
+    &.centered
+    {
+        .content-container
+        {
+            justify-content: center;
+            align-items: center;
+        }
+
+        .bar-group.left
+        {
+            flex-grow: 0;
+
+            @include breakpoint($tablet-hor)
+            {
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    .content-container
+    {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        max-width: $desktop;
+        margin: 0 auto;
+
+        .text-wrapper
+        {
+            h3
+            {
+                margin-bottom: .25em;
+                font-weight: bold;
+                font-family: $font-family-sofia-regular;
+            }
+
+            p
+            {
+                margin-bottom: 0;
+            }
+        }
+
+        @include breakpoint($tablet-hor)
+        {
+            flex-direction: row;
+        }
+    }
+
+    .bar-group
+    {
+        justify-content: space-between;
+        display: flex;
+        align-items: center;
+
+        &.left
+        {
+            flex-grow: 1;
+            margin-right: 1em;
+            margin-bottom: .75em;
+
+            @include breakpoint($tablet-hor)
+            {
+                margin-bottom: 0;
+            }
+
+            i
+            {
+                font-size: 2em;
+                padding-right: .5em;
+            }
+        }
+
+        &.right
+        {
+            text-align: right;
+            .btn-container{
+                text-align: left;
+                @include breakpoint($tablet-vert)
+                {
+                    text-align: center;
+                }
+            }
+        }
+    }
+
+    .inline-icon-wrapper{
+        position: relative;
+        .rect-badge {
+            margin: 50px auto;
+            background: #ffffff;
+            padding: 7px;
+            text-align: center;
+            font-weight: bold;
+            color: $tild-01;
+            font-family: arial;
+            position: relative;
+            border-radius: 5px;
+            position: absolute;
+            top: 8.3em;
+            right: 0em;
+            font-size: .7em;
+            z-index: 9999999999;
+            @include breakpoint($tablet-vert)
+            {
+                top: -2.7em;
+                right: -9.5em;
+            }
+            &:before {
+                content: "";
+                width: 0px;
+                height: 0px;
+                position: absolute;
+                border-left: 14px solid transparent;
+                border-right: 14px solid #ffffff;
+                border-top: 14px solid #ffffff;
+                border-bottom: 14px solid transparent;
+                left: -11px;
+                top: 0px;
+                z-index: -1;
+            }
+        }
+    }
+}

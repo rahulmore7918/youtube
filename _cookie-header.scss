@@ -1,0 +1,48 @@
+.cookie-header-wrapper
+{
+    width: 100%;
+    position: fixed;
+    bottom: 0px;
+    z-index: 999999999999;
+    background-color: rgba(0, 0, 0, 0.8);
+
+    .cookie-header
+    {
+        padding: 1.5em 1em;
+        .message
+        {
+            color: #fff;
+            font-weight: bold;
+            font-size: .8em;
+            margin-bottom: 1.5em;
+        }
+
+        .btn
+        {
+            width: 100%;
+            max-width: 30em;
+        }
+
+        @include breakpoint($tablet-vert)
+        {
+            display: table;
+            padding: 1.5em 2em;
+
+            > *
+            {
+                display: table-cell;
+                vertical-align: middle;
+            }
+
+            .btn-container
+            {
+                width: 15em;
+            }
+
+            .message
+            {
+                padding-right: 1em;
+            }
+        }
+    }
+}

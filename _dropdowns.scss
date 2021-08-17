@@ -1,0 +1,248 @@
+.dropdown-disabled
+{
+    box-shadow:none;
+    pointer-events:none;
+}
+
+.drop-down
+{
+    position: relative;
+    text-align: left;
+    background-color: white;
+    color: $green-01;
+
+    > *
+    {
+        border:1px solid $green-01;
+    }
+
+    .inline-icon-wrapper
+    {
+        display: table;
+        width: 100%;
+        cursor:pointer;
+        i
+        {
+            width: 1em;
+        }
+    }
+
+    .listing
+    {
+        margin-top: .25em;
+        text-transform:capitalize;
+        color: $green-01;
+    }
+
+    a
+    {
+        padding: .5em;
+        display: block;
+
+        &:hover, &:focus
+        {
+            color: $green-01;
+        }
+    }
+
+    .options
+    {
+        position: absolute;
+        top: calc(100% - 1px);
+        left: 0;
+        background: #fff;
+        width: 100%;
+        z-index: 1;
+        display:none;
+
+        .option
+        {
+            border-bottom: $border-primary;
+
+            &:last-child
+            {
+                border:none;
+            }
+
+            &:hover
+            {
+                background: $grey-03;
+            }
+
+            // &.active
+            // {
+            //     display: none;
+            // }
+        }
+    }
+
+    .opened
+    {
+        i
+        {
+          transform: rotate(180deg);
+          -ms-transform: rotate(180deg);
+          -moz-transform: rotate(180deg);
+          -webkit-transform: rotate(180deg);
+        }
+    }
+}
+
+.select-wrapper
+{
+    position: relative;
+    margin-top:0;
+
+    &:after
+    {
+        font-family: 'gamma-icons';
+        content: '\e912';
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 3px;
+        margin: auto;
+        color: $grey-01;
+        font-size:1.5em;
+        // height: 1em;
+        pointer-events: none;
+    }
+
+    select
+    {
+        padding-right: 1.875em;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        border: none;
+        border-bottom: 1px solid $grey-03;
+        background: transparent;
+        position: relative;
+        border-radius: 0;
+
+        /*option
+        {
+            border:1px solid $green-01;
+        }*/
+
+        &:focus
+        {
+            border-color: $blue-01;
+        }
+    }
+
+    @-moz-document url-prefix()
+    {
+        select
+        {
+            padding: 2px 5px;
+        }
+    }
+    &.opened
+    {
+        &:after
+        {
+            content: '\e912';
+            -webkit-transform: rotate(180deg);
+            -moz-transform: rotate(180deg);
+            -o-transform: rotate(180deg);
+            -ms-transform: rotate(180deg);
+            transform: rotate(180deg);
+        }
+    }
+
+    &.green-box-dropdown
+    {
+        &:after
+        {
+            color: $green-01;
+        }
+
+        select
+        {
+            border: 1px solid $tild-01;
+            color: $green-01;
+
+            &:after
+            {
+                font-family: 'Material Icons';
+                content: 'check';
+            }
+        }
+    }
+}
+
+.listing
+{
+    font-size: .7em;
+
+    > li
+    {
+        @include breakpoint($tablet-vert)
+        {
+            display: inline-block;
+        }
+    }
+
+    li:before
+    {
+        content:"•";
+        padding:0 4px;
+    }
+
+     @include breakpoint($tablet-vert)
+    {
+        li:first-child:before
+        {
+            display:none;
+        }
+    }
+}
+
+/*.dropdown
+{
+    cursor: pointer;
+
+    &:hover
+    {
+        box-shadow: $box-shadow-primary;
+    }
+
+    &.focus
+    {
+        box-shadow: none;
+    }
+
+    &.open
+    {
+        box-shadow: $box-shadow-secondary;
+
+        > div
+        {
+            box-shadow: $box-shadow-secondary;
+        }
+    }
+
+    .selected
+    {
+        color: $grey-01;
+        padding: 0;
+        line-height: inherit;
+        font-size: inherit;
+        font-weight: bold;
+        white-space: initial;
+        padding-right: 1em;
+    }
+
+    li
+    {
+        color: $grey-01;
+        white-space: initial;
+
+        &.focus
+        {
+            background-color: $green-01;
+            color: white;
+        }
+    }
+}*/

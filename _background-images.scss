@@ -1,0 +1,346 @@
+#start-opening-screen .bkgd-media-container {
+    @include bkgd-img("/assets/images/start/hero_image_sm.jpg", $orange-01);
+    @include breakpoint($mobile-vert) {
+        @include bkgd-img("/assets/images/start/hero_image_md.jpg", $orange-01);
+    }
+    @include breakpoint($tablet-vert) {
+        @include bkgd-img("/assets/images/start/landing_bg_placeholder.jpg", $transparent);
+    }
+    @include breakpoint($tablet-true-vert) {
+        background-size: contain;
+        background-position: top;
+    }
+}
+
+#about-embold {
+    .img-container {
+        @include bkgd-img("/assets/images/svg/header-product-about-gamma.svg", white);
+        @include breakpoint($high-res-display) {
+            @include bkgd-img("/assets/images/svg/header-product-about-gamma.svg", white);
+        }
+        @include breakpoint($mobile-hor) {
+            @include bkgd-img("/assets/images/svg/header-product-about-gamma.svg", white);
+        }
+        @include breakpoint($tablet-vert) {
+            @include bkgd-img("/assets/images/svg/header-product-about-gamma.svg", white);
+        }
+        @include breakpoint($desktop) {
+            @include bkgd-img("/assets/images/svg/header-product-about-gamma.svg", white);
+        }
+    }
+}
+
+#home-bkgd {
+    .img-container {
+        @include bkgd-img("/assets/images/graphics/header-index@2x.png", white);
+        @include breakpoint($high-res-display) {
+            @include bkgd-img("/assets/images/graphics/header-index@2x.png", white);
+            // margin-top:2em;
+        }
+        @include breakpoint($mobile-hor) {
+            @include bkgd-img("/assets/images/graphics/header-index@2x.png", white);
+        }
+        @include breakpoint($tablet-vert) {
+            @include bkgd-img("/assets/images/graphics/header-index@2x.png", white);
+        }
+        @include breakpoint($desktop) {
+            @include bkgd-img("/assets/images/graphics/header-index@2x.png", white);
+        }
+    }
+}
+
+#workflow-features #features {
+    .img-container {
+        background: url("/assets/images/svg/il-index-features.svg");
+        background-size: contain;
+        background-repeat: no-repeat;
+        -webkit-background-size: contain;
+        -moz-background-size: contain;
+        -o-background-size: contain;
+        @include breakpoint($high-res-display) {
+            background: url("/assets/images/svg/il-index-features.svg");
+            background-size: contain;
+            background-repeat: no-repeat;
+            -webkit-background-size: contain;
+            -moz-background-size: contain;
+            -o-background-size: contain;
+        }
+        @include breakpoint($mobile-hor) {
+            background: url("/assets/images/svg/il-index-features.svg");
+            background-size: contain;
+            background-repeat: no-repeat;
+            -webkit-background-size: contain;
+            -moz-background-size: contain;
+            -o-background-size: contain;
+        }
+        @include breakpoint($tablet-vert) {
+            background: url("/assets/images/svg/il-index-features.svg");
+            background-size: contain;
+            background-repeat: no-repeat;
+            -webkit-background-size: contain;
+            -moz-background-size: contain;
+            -o-background-size: contain;
+        }
+        @include breakpoint($desktop) {
+            background: url("/assets/images/svg/il-index-features.svg");
+            background-size: contain;
+            background-repeat: no-repeat;
+            -webkit-background-size: contain;
+            -moz-background-size: contain;
+            -o-background-size: contain;
+        }
+    }
+}
+
+#pricing-header {
+    .img-container {
+        @include bkgd-img("/assets/images/svg/header-product-pricing.svg",
+        white);
+        @include breakpoint($high-res-display) {
+            @include bkgd-img("/assets/images/svg/header-product-pricing.svg",
+            white);
+        }
+        @include breakpoint($mobile-hor) {
+            @include bkgd-img("/assets/images/svg/header-product-pricing.svg",
+            white);
+        }
+        @include breakpoint($tablet-vert) {
+            @include bkgd-img("/assets/images/svg/header-product-pricing.svg",
+            white);
+        }
+        @include breakpoint($desktop) {
+            @include bkgd-img("/assets/images/svg/header-product-pricing.svg",
+            white);
+        }
+    }
+}
+
+#solution {
+    .img-container {
+        @include bkgd-img("/assets/images/svg/header-solutions-solution-approach.svg",
+        white);
+        @include breakpoint($high-res-display) {
+            @include bkgd-img("/assets/images/svg/header-solutions-solution-approach.svg",
+            white);
+        }
+        @include breakpoint($mobile-hor) {
+            @include bkgd-img("/assets/images/svg/header-solutions-solution-approach.svg",
+            white);
+        }
+        @include breakpoint($tablet-vert) {
+            @include bkgd-img("/assets/images/svg/header-solutions-solution-approach.svg",
+            white);
+        }
+        @include breakpoint($desktop) {
+            @include bkgd-img("/assets/images/svg/header-solutions-solution-approach.svg",
+            white);
+        }
+    }
+}
+
+#industry-role {
+    .img-container {
+        @include bkgd-img("/assets/images/svg/header-solutions-by-industry.svg",
+        white);
+        @include breakpoint($high-res-display) {
+            @include bkgd-img("/assets/images/svg/header-solutions-by-industry.svg",
+            white);
+        }
+        @include breakpoint($mobile-hor) {
+            @include bkgd-img("/assets/images/svg/header-solutions-by-industry.svg",
+            white);
+        }
+        @include breakpoint($tablet-vert) {
+            @include bkgd-img("/assets/images/svg/header-solutions-by-industry.svg",
+            white);
+        }
+        @include breakpoint($desktop) {
+            @include bkgd-img("/assets/images/svg/header-solutions-by-industry.svg",
+            white);
+        }
+    }
+}
+
+#by-user-role {
+    .img-container {
+        @include bkgd-img("/assets/images/svg/header-solutions-by-user-role.svg",
+        white);
+        @include breakpoint($high-res-display) {
+            @include bkgd-img("/assets/images/svg/header-solutions-by-user-role.svg",
+            white);
+        }
+        @include breakpoint($mobile-hor) {
+            @include bkgd-img("/assets/images/svg/header-solutions-by-user-role.svg",
+            white);
+        }
+        @include breakpoint($tablet-vert) {
+            @include bkgd-img("/assets/images/svg/header-solutions-by-user-role.svg",
+            white);
+        }
+        @include breakpoint($desktop) {
+            @include bkgd-img("/assets/images/svg/header-solutions-by-user-role.svg",
+            white);
+        }
+    }
+}
+
+#top-section #team {
+    .img-container {
+        @include bkgd-img("/assets/images/svg/header-company-team.svg",
+        white);
+        @include breakpoint($high-res-display) {
+            @include bkgd-img("/assets/images/svg/header-company-team.svg",
+            white);
+        }
+        @include breakpoint($mobile-hor) {
+            @include bkgd-img("/assets/images/svg/header-company-team.svg",
+            white);
+        }
+        @include breakpoint($tablet-vert) {
+            @include bkgd-img("/assets/images/svg/header-company-team.svg",
+            white);
+        }
+        @include breakpoint($desktop) {
+            @include bkgd-img("/assets/images/svg/header-company-team.svg",
+            white);
+        }
+    }
+}
+
+#partner-block {
+    .img-container {
+        @include bkgd-img("/assets/images/svg/header-company-partners.svg",
+        white);
+        @include breakpoint($high-res-display) {
+            @include bkgd-img("/assets/images/svg/header-company-partners.svg",
+            white);
+        }
+        @include breakpoint($mobile-hor) {
+            @include bkgd-img("/assets/images/svg/header-company-partners.svg",
+            white);
+        }
+        @include breakpoint($tablet-vert) {
+            @include bkgd-img("/assets/images/svg/header-company-partners.svg",
+            white);
+        }
+        @include breakpoint($desktop) {
+            @include bkgd-img("/assets/images/svg/header-company-partners.svg",
+            white);
+        }
+    }
+}
+
+#useCases {
+    .img-container {
+        @include bkgd-img("/assets/images/svg/header-product-use-cases.svg",
+        white);
+        @include breakpoint($high-res-display) {
+            @include bkgd-img("/assets/images/svg/header-product-use-cases.svg",
+            white);
+        }
+        @include breakpoint($mobile-hor) {
+            @include bkgd-img("/assets/images/svg/header-product-use-cases.svg",
+            white);
+        }
+        @include breakpoint($tablet-vert) {
+            @include bkgd-img("/assets/images/svg/header-product-use-cases.svg",
+            white);
+        }
+        @include breakpoint($desktop) {
+            @include bkgd-img("/assets/images/svg/header-product-use-cases.svg",
+            white);
+        }
+    }
+}
+
+#by-team-size #team {
+    .img-container {
+        @include bkgd-img("/assets/images/svg/header-solutions-by-team-size.svg",
+        white);
+        @include breakpoint($high-res-display) {
+            @include bkgd-img("/assets/images/svg/header-solutions-by-team-size.svg",
+            white);
+        }
+        @include breakpoint($mobile-hor) {
+            @include bkgd-img("/assets/images/svg/header-solutions-by-team-size.svg",
+            white);
+        }
+        @include breakpoint($tablet-vert) {
+            @include bkgd-img("/assets/images/svg/header-solutions-by-team-size.svg",
+            white);
+        }
+        @include breakpoint($desktop) {
+            @include bkgd-img("/assets/images/svg/header-solutions-by-team-size.svg",
+            white);
+        }
+    }
+}
+
+#about-us {
+    .img-container {
+        @include bkgd-img("/assets/images/graphics/header-company-about-company.png",
+        white);
+        @include breakpoint($high-res-display) {
+            @include bkgd-img("/assets/images/graphics/header-company-about-company.png",
+            white);
+        }
+        @include breakpoint($mobile-hor) {
+            @include bkgd-img("/assets/images/graphics/header-company-about-company.png",
+            white);
+        }
+        @include breakpoint($tablet-vert) {
+            @include bkgd-img("/assets/images/graphics/header-company-about-company.png",
+            white);
+        }
+        @include breakpoint($desktop) {
+            @include bkgd-img("/assets/images/graphics/header-company-about-company.png",
+            white);
+        }
+    }
+}
+
+#by-industry {
+    .img-container {
+        @include bkgd-img("/assets/images/svg/header-solutions-by-industry.svg",
+        white);
+        @include breakpoint($high-res-display) {
+            @include bkgd-img("/assets/images/svg/header-solutions-by-industry.svg",
+            white);
+        }
+        @include breakpoint($mobile-hor) {
+            @include bkgd-img("/assets/images/svg/header-solutions-by-industry.svg",
+            white);
+        }
+        @include breakpoint($tablet-vert) {
+            @include bkgd-img("/assets/images/svg/header-solutions-by-industry.svg",
+            white);
+        }
+        @include breakpoint($desktop) {
+            @include bkgd-img("/assets/images/svg/header-solutions-by-industry.svg",
+            white);
+        }
+    }
+}
+
+#Careers {
+    .img-container {
+        @include bkgd-img("/assets/images/svg/header-company-careers.svg",
+        white);
+        @include breakpoint($high-res-display) {
+            @include bkgd-img("/assets/images/svg/header-company-careers.svg",
+            white);
+        }
+        @include breakpoint($mobile-hor) {
+            @include bkgd-img("/assets/images/svg/header-company-careers.svg",
+            white);
+        }
+        @include breakpoint($tablet-vert) {
+            @include bkgd-img("/assets/images/svg/header-company-careers.svg",
+            white);
+        }
+        @include breakpoint($desktop) {
+            @include bkgd-img("/assets/images/svg/header-company-careers.svg",
+            white);
+        }
+    }
+}

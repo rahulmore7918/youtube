@@ -1,0 +1,61 @@
+.bullet-container
+{
+    li
+    {
+        padding: 0 1em 0 1.6em;
+        margin-bottom: 1em;
+        vertical-align: top;
+        cursor: pointer;
+
+        .inline-icon-wrapper
+        {
+            margin-left: -1.6em;
+            display: table;
+            margin-bottom: .25em;
+
+            .icon-container
+            {
+                padding-right: .5em;
+            }
+
+            i
+            {
+                #machines &
+                {
+                    color: white;
+                }
+            }
+
+            .title
+            {
+                font-size: .85em;
+                @include textColorArray;
+
+                #machines &
+                {
+                    color: white;
+                }
+            }
+
+            @include textColorArray;
+        }
+
+        p
+        {
+            font-size: .75em;
+            padding-left: .75em;
+            margin-bottom: 0;
+
+            #machines &
+            {
+                color: white;
+            }
+        }
+
+        @include breakpoint($tablet-vert)
+        {
+            width: calc(50% - 2px);
+            display: inline-block;
+        }
+    }
+}

@@ -1,0 +1,37 @@
+.table-responsive
+{
+    overflow-x:auto;
+    table
+    {
+        &.no-bordered-table
+        {
+            width: 100%;
+
+            td, th
+            {
+                text-align: center;
+                padding: .8em;
+            }
+
+            tr:nth-child(odd)
+            {
+                background-color: white;
+            }
+            .title
+
+            {
+                background-color:transparent !important;
+                color:$grey-01;
+            }
+
+            a{
+                color:$grey-01;
+                i
+                {
+                    padding:0 .3em;
+                    cursor:pointer;
+                }
+            }
+        }
+    }
+}

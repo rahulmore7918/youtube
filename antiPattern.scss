@@ -1,0 +1,149 @@
+@import 'external/breakpoint-sass/stylesheets/_breakpoint';
+$break-small-medium:1360px;
+$break-small:1100px;
+$base-font:16px;
+
+.popup_panel_container {
+    &.anti-pattern-popup {
+        .popup_title_container {
+            display: table;
+
+            .stepper-container {
+                display: table-cell;
+                vertical-align: middle;
+                width: 10%;
+
+                .stepper {
+                    display: inline-flex;
+                    -webkit-box-pack: end;
+                    -webkit-justify-content: flex-end;
+                    -ms-flex-pack: end;
+                    justify-content: flex-end;
+
+                    .issue-stepper {
+                        margin-right: 25px;
+                        margin-top: 12px;
+                        display: table;
+                        background: white;
+                        border: 1px solid #3b434c;
+
+                        .ic-chevron-left-filled,
+                        .ic-chevron-right-filled {
+                            font-size: 22px;
+                            font-weight: normal;
+                        }
+
+                        .stepper-down {
+                            border-left: 1px solid #3b434c;
+
+                        }
+
+                        .stepper-up {
+                            border-right: 1px solid #3b434c;
+
+                        }
+
+                        .stepper-up.disable,
+                        .stepper-down.disable {
+                            pointer-events: none;
+                            opacity: 0.5;
+                            // border-right: 1px solid #4a90e2;
+
+                        }
+
+                        .stepper-selection,
+                        .stepper-down,
+                        .stepper-up {
+                            // font-size: .7em;
+                            // padding: 0 5px;
+                            display: table-cell;
+                            color: #3b434c;
+                            cursor: pointer;
+                            vertical-align: middle;
+                        }
+
+                        .stepper-current-number {
+                            padding-right: 5px;
+                        }
+
+                        .stepper-total-number {
+                            padding-left: 5px;
+                        }
+
+                        .stepper-selection {
+                            display: inline-flex;
+                            font-size: .8em;
+                            padding: 0 5px;
+                        }
+                    }
+
+                }
+            }
+
+        }
+
+        .popup_content {
+            .anti-pattern-info-panel {
+                padding: 20px 10px;
+                width: 17em;
+                border-left: 1px solid #f1f2f4;
+                position: absolute;
+                right: 0;
+                height: 100%;
+
+                .info-wrapper {
+                    display: inline-flex;
+
+                    .metrics-cell {
+                        margin-right: 15px;
+                        display: inline-block;
+                        height: 19px;
+                        width: 19px;
+                        font-size: 1.58em;
+                        background: white;
+                    }
+                }
+
+                .access-docs-wrapper {
+                    position: absolute;
+                    bottom: 57px;
+                    width: 100%;
+                    padding: 1em;
+                    background: #ffffff;
+
+                    .acces-btn {
+                        width: 100%;
+
+                        &:hover {
+                            color: white;
+                            background-color: #ef7e53;
+                            border-color: #ef7e53;
+                        }
+
+                    }
+                }
+
+            }
+
+            .anti-pattern-view-panel {
+                position: absolute;
+                width: 61.5em;
+                padding: 1em;
+                background: #ffffff;
+            }
+
+        }
+
+        .anti-pattern-content-info {
+            position: absolute;
+            bottom: 0;
+            width: 61.5em;
+            padding: 1em;
+            border-top: 1px solid #f1f2f4;
+            background: #ffffff;
+            /* max-height: 102px; */
+            height: 7em;
+        }
+
+    }
+}

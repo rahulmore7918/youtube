@@ -1,0 +1,28 @@
+.circle-icon-container
+{
+    width: 6em;
+    border: 1px solid $orange-01;
+    border-radius: 50%;
+    height: 6em;
+    position: relative;
+    margin:1em auto;
+    i
+    {
+        color:$orange-01;
+        font-size:2em;
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom:0;
+        right: 0;
+        width: auto;
+        height: auto;
+        max-width: 100%;
+        max-height: 100%;
+        font-weight:normal;
+        margin: auto;
+        /* extra */
+        height: 1em;
+        text-align:center;
+    }
+}

@@ -1,0 +1,76 @@
+@import 'external/breakpoint-sass/stylesheets/_breakpoint';
+$break-small-medium:1360px;
+
+.sanpshot_selection_container {
+    min-width: 15em;
+    margin-left: 3em;
+    margin-top: 0;
+
+    @include breakpoint($break-small-medium) {
+        margin-left: 0px;
+    }
+
+    .snapshots_selector1,
+    .snapshots_selector2,
+    .branch_selector {
+        float: left;
+        min-width: 15em;
+    }
+
+    .branch_selector {
+        margin-right: 1em;
+    }
+
+    .ic-snapshot,
+    .ic-branch {
+        color: #3b434c;
+        font-size: 1.3em;
+    }
+
+    .snapshot_selector_arrow {
+        font-size: 2em;
+        display: inline-block;
+        float: left;
+        margin: 0 0.5em;
+        line-height: 1.7em;
+    }
+
+    .snapshot_selector_arrow.hide:before {
+        display: none;
+    }
+
+    .snapshots_selector2_inactive {
+        #dropdownbox {
+            .dropdown_text {
+                color: inherit;
+            }
+
+            .ic-snapshot {
+                color: #fff;
+            }
+        }
+    }
+
+    .combobox {
+        .combobox_selection {
+            .combobox_title {
+                .display_snapshot_msg {
+                    line-height: 31px;
+                    color: #5e6a79;
+                    font-size: 13px;
+                }
+            }
+        }
+    }
+}
+
+.dropDown_list {
+    .ic-snapshot {
+        padding: 5px 0;
+    }
+}
+
+li.dropdown_list_content {
+    float: left;
+    cursor: pointer;
+}

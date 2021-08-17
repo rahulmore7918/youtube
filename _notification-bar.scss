@@ -1,0 +1,147 @@
+#notification
+{
+    .orange
+    {
+        background-color: $orange-01;
+    }
+    .btn-container
+    {
+        >*
+        {
+            display: inline-block;
+            vertical-align: middle;
+            padding-right: 15px;
+            &:last-child()
+            {
+                padding-right: 0;
+            }
+        }
+
+    }
+}
+.notification-bar
+{
+    //width: 100%;
+    bottom: 0px;
+    z-index: 999;
+    background-color: rgba(0, 0, 0, 0.8);
+    .centered-container
+    {
+        min-height:70px!important;
+        padding:1em !important;
+    }
+    .release-version-wrap
+    {
+        display: table;
+        .release-version
+        {
+            width: 100%;
+            p
+            {
+                margin-bottom: 0;
+                color:white;
+            }
+        }
+        >*
+        {
+            display: table-cell;
+            vertical-align: middle;
+        }
+    }
+}
+
+.notification-content
+{
+
+    .text-wrap
+    {
+        color: #fff;
+        font-weight: bold;
+        margin-bottom: 1.5em;
+        padding-right: 0;
+        text-align:center;
+        @include breakpoint($tablet-vert)
+        {
+            padding-right: 2em;
+        }
+
+    }
+    a
+    {
+        color:white;
+        text-transform: none;
+    }
+    .licence-summary-wrap,
+    {
+        color: #fff;
+        font-weight: bold;
+        margin-bottom: 1.5em;
+        .licence-summary
+        {
+            text-align:center;
+            @include breakpoint($tablet-vert)
+            {
+                text-align:left;
+            }
+
+            li
+            {
+                color:#fff;
+                display: inline-block;
+                padding-right: 2em;
+                text-align:center;
+                margin:1em 0;
+                @include breakpoint($tablet-vert)
+                {
+                    font-size:0.9em;
+                    margin:0;
+                }
+
+                i
+                {
+                    vertical-align:middle;
+                    margin-right:.35em;
+                }
+                span
+                {
+                    vertical-align:middle;
+                    font-weight: normal;
+                }
+
+                &:first-child
+                {
+
+                }
+            }
+        }
+    }
+
+    .btn
+    {
+        width:100%;
+        max-width:30em;
+    }
+
+    @include breakpoint($tablet-vert)
+    {
+        display: table;
+        padding: 1.5em 2em;
+        width:100%;
+        > *
+        {
+            display: table-cell;
+            vertical-align: middle;
+        }
+
+        .btn-container
+        {
+            width: 15em;
+            text-align: right;
+        }
+
+        .licence-summary-wrap
+        {
+            padding-right: 1em;
+        }
+    }
+}

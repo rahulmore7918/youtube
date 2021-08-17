@@ -1,0 +1,32 @@
+#toTop {
+    background:$green-01;
+    position: fixed;
+    bottom: 0.5em;
+    right: 6em;
+    display: none;
+    z-index: 999;
+    cursor: pointer;
+    width: 3em;
+    border-radius: 50%;
+    height: 3em;
+    margin: 1em auto;
+    i
+    {
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        width: auto;
+        height: auto;
+        max-width: 100%;
+        max-height: 100%;
+        font-weight: normal;
+        margin: auto;
+        height: 1em;
+        text-align: center;
+        color:#fff;
+        font-size: 2em;
+        font-weight: bold
+    }
+}

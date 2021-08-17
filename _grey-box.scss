@@ -1,0 +1,109 @@
+.grey-box {
+    background: $grey-04;
+    padding: 2em;
+    margin: 1em 0 1.5em;
+    position: relative;
+    rotating-plane-spinner {
+        .three-dots-row-spinner {
+            background-color: $blue-01;
+        }
+    }
+    #overlay {
+        position: absolute;
+        background-color: rgba(0, 0, 0, 0.2);
+        /* Black background with opacity */
+        .spinner-wrapper {
+            .three-dots-row-spinner {
+                background-color: $blue-01;
+            }
+        }
+        .btn {
+            pointer-events: none;
+        }
+    }
+    .title {
+        border-bottom: 1px solid $grey-01;
+        margin-bottom: 1.5em;
+    }
+    .form-group {
+        background: white;
+        margin-bottom: 1em;
+        label {
+            padding-top: .5em;
+        }
+        input,
+        .dropdown {
+            padding: 0.25em 7px;
+            cursor: pointer;
+        }
+    }
+    .btn-container {
+        text-align: right;
+        align-self: flex-end;
+        .btn-text {
+            font-weight: bold;
+        }
+    }
+    .info-detail {
+        line-height: 1.5em;
+        &:first-child() {
+            border-bottom: 1px solid $grey-01;
+        }
+        .fluid-row-container {
+            border-bottom: none;
+        }
+        p {
+            font-size: 0.8em;
+            margin-bottom: 0;
+        }
+        .deactivated-description {
+            margin-bottom: 1em;
+        }
+    }
+    .package-info {
+        .fluid-row-container {
+            border-bottom: none;
+            padding: 1em 0 0;
+            a,
+            button {
+                width: 10em;
+            }
+        }
+    }
+    .fluid-row-container {
+        border-bottom: 1px solid $grey-01;
+        a:not(.button) {
+            font-weight: bold;
+            .text-container {
+                align-items: flex-end;
+            }
+        }
+    }
+    .inline-grey-box-wrapper & {
+        display: inline-block;
+        width: 100%;
+        float: left;
+        @include breakpoint($tablet-hor) {
+            width: 49%;
+            &:nth-child(odd) {
+                margin-right: 1%;
+            }
+            &:nth-child(even) {
+                margin-left: 1%;
+            }
+        }
+    }
+    .referral-tooltiptext {
+        i {
+            font-size: 1em;
+        }
+        .tooltip {
+            .tooltiptext {
+                font-weight: normal;
+                font-size: .85em;
+                line-height: 18px;
+                left: 25px;
+            }
+        }
+    }
+}

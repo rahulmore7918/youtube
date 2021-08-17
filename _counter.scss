@@ -1,0 +1,29 @@
+.counter-element
+{
+    input
+    {
+        color:$green-01;
+
+        &.plus, &.minus
+        {
+            width: 2em;
+            height: 2em;
+            background:white;
+            border:1px solid $green-01;
+
+            outline: 0 none;
+        }
+
+        &.qty
+        {
+            width: 4em;
+            height: 2em;
+            text-align: center;
+            background: white;
+            border: 1px solid $green-01;
+            outline: 0 none;
+            color: $grey-01;
+            margin: 0 .5em;
+        }
+    }
+}
